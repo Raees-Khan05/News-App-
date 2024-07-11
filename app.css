@@ -1,0 +1,165 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+
+}
+
+body{
+    font-family: sans-serif , 'Times New Roman', Times, serif;
+    color: #183b56;
+}
+
+
+p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #577592;
+    line-height: 1.4rem;
+}
+
+a { 
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+
+.container{
+    /* display: flex; */
+    /* align-items: center; */
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+nav{
+    background-color: #f3faff;
+    box-shadow: 0 1px 4px #bbd0e2;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* height: 60px; */
+    /* display: flex; */
+    /* align-items: cent er; */
+    height: 60px;
+    padding-top: 8px;
+    
+}
+
+.main_container{
+    justify-content: space-between;
+    padding: 7px 0px;
+}
+
+
+.nav-links ul{
+    gap: 18px;
+}
+
+
+.hover{
+    cursor: pointer;
+}
+
+
+.hover:hover{
+    color: #183b56;
+}
+
+.hover:active{
+    color: red;
+}
+
+
+.search_bar{
+    height: 32px;
+    gap: 8px;
+}
+
+
+.main_textbar{
+    width: 200px;
+    height: 33px;
+    
+    padding: 12px 10px;
+    border-radius: 4px;
+    border: 2px solid #bbd0e2;
+}
+
+
+.search{
+    background-color: navy;
+    color: white;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search:hover{
+    background-color: lightblue;
+    color: #577592;
+}
+
+
+main{
+    padding: 20px 30px;
+    margin-top: 80px;
+}
+
+.cards_container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.card{
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 1px 2px 4px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: 0.3s ease ;
+}
+
+.card { 
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: scaleY(-2px);
+}
+
+.card_header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+.card_content{
+    padding: 12px;
+}
+
+.news-source{
+    margin-block: 12px;
+}
+
+
+.nav_items.active {
+   color: navy;
+   font-weight: bold;
+   font-style: italic;
+}
